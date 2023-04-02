@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Services</title>
+    <style src = "style.css">
+	html, body {
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+  background-color:black;
+}
+/* MAIN -----------------------------------------------*/
+
+main {
+  text-align: center;
+}
+ 
+ section {
+   /* activate to view section dimensions
+  background-color: purple;*/
+  margin-top: 40px; 
+}
+
+/* section sizing */
+.sm-section {
+  min-height: 33vh;
+}
+
+.md-section {
+  min-height: 66vh;
+}
+
+.lg-section {
+  min-height: 99vh;
+}
+
+h1 {
+  font-size: 50px;
+  text-align:center;
+  color:#06e2ff;
+  font-family: 'Kanit', sans-serif;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  section {
+    margin: auto;
+    height: auto;
+    width: 100%;
+    padding-top: none;
+    min-height: none;
+  }
+}
+
+/* SERVICES SECTION ---------------------*/
+
+#services-section {
+  padding-top: 80px;
+}
+
+/* img columns and rows */
+.imgRow {
+  display: flex;
+}
+
+.imgColumn {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+/* img hover */
+.imgContainer {
+  position: relative;
+  width: 95%;
+  margin: 20px 0px 20px 10px;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  border:5px solid #06e2ff;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.imgContainer:hover .image {
+  opacity: 0.3;
+}
+
+.imgContainer:hover .middle {
+  opacity: 1;
+}
+
+.hov-but {
+  background-color: #06e2ff;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  cursor: pointer;
+}
+	a:hover {
+  background-color: white;
+  color: black;
+}
+.next {
+   background-color: #06e2ff;
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  float:right;
+  
+}
+
+.round {
+  border-radius: 50%;
+}
+.previous {
+  background-color: #06e2ff;
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  float:left;
+}
+
+
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  
+  <body>
+ 
+          <h1 id = "service-header">Our Services</h1>
+          
+          <div class="imgRow">
+          
+        <div class="imgColumn">
+          <div id = "service1" class="imgContainer">
+  <img id = "img1" src= "images/10.jpg" alt="Lorem Ipsum" class="image" style="width:100%;height:500px">
+  <div class="middle">
+    <button id = "but1" class="hov-but">Help Desk IT Service</button>
+  </div>
+</div>
+         </div>
+            
+            <div class="imgColumn">
+          <div id = "service2" class="imgContainer">
+  <img id = "img2" src= "images/11.jpg" alt="Lorem Ipsum" class="image" style="width:100%;height:500px">
+  <div class="middle">
+    <button id = "but2" class="hov-but">Data Storage and Management</button>
+  </div>
+</div>
+    </div>
+            
+            <div class="imgColumn">
+          <div id = "service3" class="imgContainer">
+  <img id = "img3" src= "images/12.jpg" alt="Lorem Ipsum" class="image" style="width:100%;height:500px">
+  <div class="middle">
+    <button id = "but3" class="hov-but">Network Security</button>
+  </div>
+</div>
+    </div>
+        
+          </div>
+          
+          <div class="imgRow">
+          
+        <div class="imgColumn">
+          <div id = "service4" class="imgContainer">
+  <img id = "img4" src= "images/13.jpg" alt="Lorem Ipsum" class="image" style="width:100%;height:500px">
+  <div class="middle">
+    <button id = "but4" class="hov-but">Computer Training</button>
+  </div>
+</div>
+         </div>
+          
+            <div class="imgColumn">
+          <div id = "service5" class="imgContainer">
+  <img id = "img5" src= "images/15.jpg" alt="Lorem Ipsum" class="image" style="width:100%;height:500px">
+  <div class="middle">
+    <button id = "but5" class="hov-but">Email Marketing Service</button>
+  </div>
+</div>
+         </div>
+            
+            <div class="imgColumn">
+          <div id = "service6" class="imgContainer">
+  <img id = "img6" src= "images/14.avif" alt="Lorem Ipsum" class="image" style="width:100%;height:500px">
+  <div class="middle">
+    <button id = "but6" class="hov-but">Web Design</button>
+  </div>
+</div>
+         </div>
+            
+            
+          </div>
+        </section>
+      </div>
+	  <a href="Home.html" class="previous round">&#8249;</a>
+<a href="Courses.html" class="next round">&#8250;</a>
+      
+      
+     
+  </body>
+</html>
